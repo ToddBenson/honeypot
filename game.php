@@ -12,9 +12,13 @@ if ( $_COOKIE["SessionID"] == "amRvZTpQYXNzd29yZDE=") {
 
 echo '
 <html>
+<head>
+   <link rel="stylesheet" href="./_css/main.css">
+</head>
 <body>
 <center>
 Game Success!!!!
+<br><a href="./logout.php" class="btn">Logout</a>
 </center>
 </body>
 </html>';
