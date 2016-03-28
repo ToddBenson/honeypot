@@ -4,56 +4,43 @@ $date=date("j F, Y, g:i a");;
 $referer=getenv ('HTTP_REFERER');
 $agent=getenv ('HTTP_USER_AGENT');
 $fp = fopen('data.txt', 'a');
-fwrite($fp, '****Credentials: ' .$_POST["login"]. ' ' .$_POST["password"]. ' Agent: ' .$agent. ' IP: ' .$ip. ' Date and Time: ' .$date. ' Referer: '.$referer."\n");
+fwrite($fp, '****Login: Landing Agent: ' .$agent. ' IP: ' .$ip. ' Date and Time: ' .$date. ' Referer: '.$referer."\n");
 fclose($fp);
 ?>
 <html>
 
     <head>
-        <title> Personl VPN </title>
+        <title> Personal VPN </title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; report-uri /collector/csp_parser.php"> 
-    </head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; report-uri /collector/csp_parser.php"> 
+        <link rel="stylesheet" href="./_css/main.css">
+</head>
+
 
     <body>
-        <div id="container" style="width: 800px; margin: 30px auto;">
-            <h1 style="text-align: center;"> My Personal Info</h1>
-            <hr />
-
-            <form action="/login.php" method="post" class="niceform">
-                <h2>Login Form</h2>
-                <div id="login_msg">Please fill in your credentials</div>
-                <label for="login">Login:</label>
-                <input type="text" name="login" id="login" size="32" />
+        <div classs="container">
+            <center>
+   	    <br><br>
+	    <h2>WARNING:<br>AUTHORIZED ACCESS ONLY</h2>
+		<p class="notice">This site is for personal use only.
+	    <div class="login-block">
+	    <h1>Login</h1>
+            <form action="login_submit.php" method="post">
+                <input type="text" name="login" value="" id="login" placeholder="Username" size="32" />
                 <br />
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password" size="32" />
+                <input type="password" name="password" value="" placeholder="Password" id="password" size="32" />
                 <br />
-                <input type="submit" name="submit" id="submit_login" value="Submit" />
+                <input type="submit" name="submit" class="btn" id="submit_login" value="Submit" />
             </form>
-
-            <hr />
-
-            <h2>WARNING: AUTHORIZED ACCESS ONLY</h2>
-		<p>This site is for personal use only.
-            <hr />
-
-            <form action="comments.php" method="POST" class="niceform">
-                <h2>Contact Me</h2>
+            <form action="comments.php" method="POST">
+                <h1>Contact Me</h1>
                 <label for="comment">Leave a comment for me</label>
                 <br />
-                <textarea name="comment" id="comment" rows="4" columns="300"></textarea>
+                <textarea name="comment" id="comment" rows="4" columns="500"></textarea>
                 <br />
-                <input type="submit" name="submit" id="submit_comment" value="Submit" />
+                <br />
+                <input type="submit" name="submit" class="btn" id="sumbit_login" value="Submit" />
             </form>
-
-            <hr />
-
-            <div id="comments">This is a really great site. Thanks for the access</div>
-
-            <hr />
-
-            <div id="footer"> Footer Powered By Personal Info. <i>Last updated 3/12/2016</i></div>
-        </div>
+	</div>
     </body>
 </html>

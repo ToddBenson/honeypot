@@ -8,6 +8,9 @@ fwrite($fp, '****Comment: ' .$_POST["comment"]. ' Agent: ' .$agent. ' IP: ' .$ip
 fclose($fp);
 ?>
 <html>
+<head>
+   <link rel="stylesheet" href="./_css/main.css">
+</head>
 <body>
 <center>
 <br><br><br>
