@@ -1,39 +1,28 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="refresh" content="30">
-<style type="text/css">
-	#container {
-	display: table;
-	width: 100%;
-	Height: 30%;
-	}
-	#container > div {
-	display: table-cell;
-	padding: 1em;
-	width: 50%;
-	border: 2px solid blue;
-	}
-</style>
+<link rel="stylesheet" href="/_css/dashboard.css">
 </head>
 <body>
 <center><h2>Dashboard</h2></center>
 <div id="container">
  <div> 
     <center>Access Data</center>
-    <object data="/data.txt" width = 100% height=100%></object></div>
+    <object data="/data.txt" width=100%></object></div>
 </div>
 <div id="container"> 
 <div>
     <center>Access Log</center>
-    <object data="/access.log" width = 100% height=100%></object></div>
+    <object data="/access.log" width=100%></object></div>
 </div>
 <div id="container">
  <div> 
     <center>CSP Report</center>
-    <object type="text/html" data="/collector/cspdata.txt" width = 100% height=100%></object></div>
+    <object type="text/html" data="/collector/cspdata.txt" width=100%></object></div>
  <div> 
     <center>Cookie Catcher</center>
-    <object type="text/html" data="/catcher/cookies.html" width = 100% height=100%></object></div>
+    <object type="text/html" data="/catcher/cookies.html" width=100%></object></div>
 </div>
 </body>
 </html>

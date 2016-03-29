@@ -1,15 +1,16 @@
 <?php
-$ip = getenv ('REMOTE_ADDR');
-$date=date("j F, Y, g:i a");;
-$referer=getenv ('HTTP_REFERER');
-$agent=getenv ('HTTP_USER_AGENT');
-$fp = fopen('data.txt', 'a');
-fwrite($fp, '****Comment: ' .$_POST["comment"]. ' Agent: ' .$agent. ' IP: ' .$ip. ' Date and Time: ' .$date. ' Referer: '.$referer."\n");
-fclose($fp);
+require('logAccess.php');
+
+$name = "Comments";
+$parameters = "";
+
+logAccess($name, $parameters);
+
 ?>
+<!DOCTYPE html>
 <html>
 <head>
-   <link rel="stylesheet" href="./_css/main.css">
+   <link rel="stylesheet" href="/_css/main.css">
 </head>
 <body>
 <center>
