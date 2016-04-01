@@ -10,7 +10,7 @@ logAccess($name, $parameters);
 <!DOCTYPE html>
 <html>
 <head>
-   <link rel="stylesheet" href="/_css/main.css">
+   <link rel="stylesheet" href="_css/main.css">
 </head>
 <body>
 <center>

@@ -14,12 +14,12 @@ logAccess($name, $parameters);
         <title> Personal VPN </title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; report-uri http://159.203.255.227/collector/csp_parser.php"> 
-        <link rel="stylesheet" href="/_css/main.css">
+        <link rel="stylesheet" href="_css/main.css">
 </head>
 
 
     <body>
-        <div classs="container">
+        <div class="container">
             <center>
    	    <br><br>
 	    <h2>WARNING:<br>AUTHORIZED ACCESS ONLY</h2>
