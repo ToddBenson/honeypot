@@ -10,7 +10,7 @@ fclose($fp);
 <html>
 
     <head>
-        <title> Personl VPN </title>
+        <title> Personal VPN </title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; report-uri /collector/csp_parser.php"> 
     </head>
@@ -20,7 +20,7 @@ fclose($fp);
             <h1 style="text-align: center;"> My Personal Info</h1>
             <hr />
 
-            <form action="/login.php" method="post" class="niceform">
+            <form action="login.php" method="post" class="niceform">
                 <h2>Login Form</h2>
                 <div id="login_msg">Please fill in your credentials</div>
                 <label for="login">Login:</label>
